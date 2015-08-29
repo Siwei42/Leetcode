@@ -24,19 +24,14 @@ public class LetterCombinationsOfAPhoneNumber {
             return;
         }
         for(int i = 0; i < map.get(digits.charAt(0)).length(); i++){
-        	if(!map.containsKey(digits.charAt(0)))
-        		continue;
             if(digits.length() > 1){
                 helper(digits.substring(1), map, res, item + map.get(digits.charAt(0)).charAt(i));
             }
             else{
-                helper(new String(), map, res, item + map.get(digits.charAt(0)).charAt(i));
+                helper("", map, res, item + map.get(digits.charAt(0)).charAt(i));
                 continue;
             }
-            if(item.length() > 1)
-                item.substring(0, item.length()-2);
-            else
-                item = new String();
+            item.substring(0, item.length());
         }
     }
     public static void main(String[] args){
