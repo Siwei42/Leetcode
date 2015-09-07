@@ -25,7 +25,7 @@ public class BinaryTreePreorderTraversal {
         helper(root.left, res);
         helper(root.right, res);
     }
-//	Recursive Method 2
+//	Divide & Conquer
     public List<Integer> preorderTraversal2(TreeNode root) {
         List<Integer> pre = new LinkedList<Integer>();
         if(root==null) 

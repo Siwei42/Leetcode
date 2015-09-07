@@ -1,6 +1,7 @@
 package Tree;
 
 public class BalancedBinaryTree {
+//  Divide & Conquer
 	public boolean isBalanced(TreeNode root) {
         return helper(root) != -1;
     }
@@ -15,4 +16,6 @@ public class BalancedBinaryTree {
         }
         return Math.max(left, right) + 1;
     }
+
+    
 }	
