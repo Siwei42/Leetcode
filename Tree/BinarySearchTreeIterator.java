@@ -14,7 +14,7 @@ public class BinarySearchTreeIterator {
 
     /** @return whether we have a next smallest number */
     public boolean hasNext() {
-        return node == null && stack.isEmpty() ? false : true;
+        return (node != null || !stack.isEmpty());
     }
 
     /** @return the next smallest number */
