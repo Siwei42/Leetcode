@@ -29,13 +29,11 @@ public class LetterCombinationsOfAPhoneNumber {
             }
             else{
                 helper("", map, res, item + map.get(digits.charAt(0)).charAt(i));
-                continue;
             }
-            item.substring(0, item.length());
         }
     }
     public static void main(String[] args){
     	LetterCombinationsOfAPhoneNumber l = new LetterCombinationsOfAPhoneNumber();
-    	System.out.println(l.letterCombinations("234"));
+    	System.out.println(l.letterCombinations("23"));
     }
 }
